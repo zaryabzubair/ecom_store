@@ -1,4 +1,3 @@
-#!/bin/sh
 
 echo "Building project packages..."
 pip3.9 install -r requirements.txt
