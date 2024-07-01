@@ -1,6 +1,7 @@
+#!/usr/bin/env bash
 
 echo "Building project packages..."
-pip3.9 install -r requirements.txt
+pip install -r requirements.txt
 
 echo "Collecting static files..."
-python3.9 manage.py collectstatic --noinput
+python manage.py collectstatic --noinput
