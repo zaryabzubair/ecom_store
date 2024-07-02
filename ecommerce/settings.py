@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-=w53+lsj&z#x**mmw7h6wu%l%s-x959virwa_)r$+o)r7v20wy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost',]
-
+#ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost',]
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'ecommerce.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
