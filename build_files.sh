@@ -1,3 +1,9 @@
+echo "Virtual environment setup..."
+python3.9 -m venv venv
+
+echo "Activating virtual environment..."
+source venv/bin/activate
+
 echo "Building project packages..."
 python3.9 -m pip install -r requirements.txt
 
