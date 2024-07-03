@@ -4,9 +4,6 @@ import pyrebase
 from ecommerce.firebase_config import FIREBASE_CONFIG
 import logging
 
-firebase = pyrebase.initialize_app(FIREBASE_CONFIG)
-db = firebase.database()
-
 logger = logging.getLogger(__name__)
 
 
